@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 
-// Note: We're not importing UI components here as they're not available in this setup.
-// You might need to adjust the UI elements accordingly.
-
 const API_URL = 'https://your-render-backend-url.onrender.com/api/order'; // Replace with your actual Render backend URL
 
-const SocialServicesApp = () => {
+function App() {
   const [formData, setFormData] = useState({
     service: '',
     link: '',
@@ -49,7 +46,7 @@ const SocialServicesApp = () => {
   };
 
   return (
-    <div>
+    <div className="App">
       <h1>Social Media Services</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -90,6 +87,6 @@ const SocialServicesApp = () => {
       {result && <p style={{color: 'green'}}>{result.message}</p>}
     </div>
   );
-};
+}
 
-export default SocialServicesApp;
+export default App;
