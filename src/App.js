@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const API_URL = 'https://smm-swkt.onrender.com'; // Replace with your actual Render backend URL
+const API_URL = 'https://smm-swkt.onrender.com/api/order'; // Replace with your actual Render backend URL
 
 function App() {
   const [formData, setFormData] = useState({
